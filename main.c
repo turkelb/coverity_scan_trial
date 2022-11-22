@@ -24,7 +24,7 @@ int main()
     index = get_index();
     
     if(index!=MAX_SIZE) {
-      memcpy(&tempBuff[index], src, sizeof(struct myStruct));
+      memcpy(&tempBuff[index], &src, sizeof(struct myStruct));
     }
     return 0;
 }
